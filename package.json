@@ -1,0 +1,11 @@
+{
+    "name": "com.itsector.androidkeystoreplugin",
+    "version": "0.0.1",
+    "description": "Cordova plugin ",
+    "cordova": {
+        "id": "com.itsector.androidkeystoreplugin",
+        "platforms": [
+            "android"
+        ]
+    }
+}
