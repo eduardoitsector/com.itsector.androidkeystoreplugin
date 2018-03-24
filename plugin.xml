@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="com.itsector.androidkeystoreplugin"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        version="0.0.2">
+    
+	<name>AndroidKeystorePlugin</name>
+  <description>Cordova Android Keystore Plugin for use with android by ITSector</description>
+
+	<asset src="www/AndroidKeystorePlugin.js" target="js/AndroidKeystorePlugin.js"/>
+  <js-module src="www/AndroidKeystorePlugin.js" name="AndroidKeystorePlugin">
+      <clobbers target="AndroidKeystorePlugin" />
+  </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AndroidKeystorePlugin" >
+                <param name="android-package" value="AndroidKeystorePlugin"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/AndroidKeystorePlugin.java" target-dir="src/" />
+    </platform>
+	
+</plugin>
